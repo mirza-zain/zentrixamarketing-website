@@ -1,12 +1,12 @@
 'use client'
 
-import { ArrowRight, PenTool } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import services from "../components/data/serviceArr";
 import { useState } from "react";
 
 
 export default function ServiceScreen() {
-  const [selectedService, setSelectedService] = useState<any>(null);
+  const [selectedService, setSelectedService] = useState<string | null>(null);
 
   return (
     <div className="w-full h-full bg-gray-100 flex flex-col justify-center items-center p-5">
@@ -20,8 +20,10 @@ export default function ServiceScreen() {
               {services.map((service, index) => (
                 <div 
                   key={index} 
-                  className="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 p-8 border border-gray-100 cursor-pointer hover:border-indigo-300 group transform hover:-translate-y-1"
-                  onClick={() => setSelectedService(service)}
+                  className={`bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 p-8 border cursor-pointer group transform hover:-translate-y-1 ${
+                    selectedService === service.title ? 'border-indigo-400' : 'border-gray-100 hover:border-indigo-300'
+                  }`}
+                  onClick={() => setSelectedService(service.title)}
                 >
                   <div className="w-16 h-16 rounded-xl bg-gray-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-sm">
                     {service.icon}

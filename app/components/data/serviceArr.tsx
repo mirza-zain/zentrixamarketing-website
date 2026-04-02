@@ -1,13 +1,11 @@
-import { BookOpen, Film, Globe, Palette } from "lucide-react";
-
-  const writingIconImage = "https://cdn-icons-png.flaticon.com/512/3220/3220114.png";
+import { BookOpen, Film, Globe, Palette, PenTool } from "lucide-react";
 
 
 const services = [
     {
       title: "Writing Services",
       description: "Professional and engaging content writing, copywriting, and creative storytelling tailored to your audience.",
-      icon: <img src={writingIconImage} alt="Writing Services Icon" className="w-10 h-10 object-contain" />
+      icon: <PenTool className="w-8 h-8 text-amber-600" />
     },
     {
       title: "FanArts",

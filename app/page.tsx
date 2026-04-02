@@ -1,6 +1,8 @@
 import Link from "next/link";
 import ServiceScreen from "./screens/ServiceScreen";
 import PortfolioScreen from "./screens/PortfolioScreen";
+import CoverArtScreen from "./screens/CoverArtScreen";
+import ContactSection from "./screens/ContactScreen";
 
 export default function Home() {
   return (
@@ -27,7 +29,9 @@ export default function Home() {
         </div>
       </div>
       <ServiceScreen />
+      <CoverArtScreen />
       <PortfolioScreen />
+      <ContactSection />
     </>
   );
 }
