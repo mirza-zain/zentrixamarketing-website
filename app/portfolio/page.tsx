@@ -101,13 +101,15 @@ const PortfolioPage = () => {
           aria-label="Close lightbox"
           tabIndex={0}
         >
-          <Image
-            src={activeImage}
-            alt="Expanded artwork"
-            className="max-h-[90vh] max-w-[95vw] rounded-2xl border border-slate-700 shadow-2xl"
-            unoptimized
-            onClick={(event) => event.stopPropagation()}
-          />
+          <div className="max-h-[90vh] max-w-[95vw] md:max-w-300 flex items-center justify-center">
+            <Image
+              src={activeImage}
+              alt="Expanded artwork"
+              className="h-auto w-auto max-h-[90vh] max-w-full object-contain rounded-2xl border border-slate-700 shadow-2xl"
+              unoptimized
+              onClick={(event) => event.stopPropagation()}
+            />
+          </div>
         </div>
       )}
       
