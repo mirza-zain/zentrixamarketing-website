@@ -15,8 +15,52 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zentrixa Marketing",
-  description: "Different services in one place.",
+  metadataBase: new URL("https://zentrixa-marketing.com"),
+  title: {
+    default: "Zentrixa Marketing | Wikipedia Writing, Fan Art, Animation & Branding",
+    template: "%s | Zentrixa Marketing",
+  },
+  description:
+    "Zentrixa Marketing delivers Wikipedia writing, fan art, comic books, animation, and creative branding services to help businesses grow globally.",
+  keywords: [
+    "Zentrixa Marketing",
+    "creative studio",
+    "Wikipedia page creation",
+    "fan art services",
+    "comic book design",
+    "animation services",
+    "branding agency",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Zentrixa Marketing",
+    title: "Zentrixa Marketing | Wikipedia Writing, Fan Art, Animation & Branding",
+    description:
+      "From Wikipedia writing to fan art, comics, and animation, Zentrixa Marketing provides end-to-end creative services for modern brands.",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zentrixa Marketing | Wikipedia Writing, Fan Art, Animation & Branding",
+    description:
+      "Wikipedia writing, fan art, comic books, animation, and branding services to elevate your business presence.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "business",
 };
 
 export default function RootLayout({

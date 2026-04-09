@@ -1,8 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ServiceScreen from "./screens/ServiceScreen";
 import PortfolioScreen from "./screens/PortfolioScreen";
 import CoverArtScreen from "./screens/CoverArtScreen";
 import ContactSection from "./screens/ContactScreen";
+
+export const metadata: Metadata = {
+  title: "Creative Branding, Animation & Wiki Services",
+  description:
+    "Explore Zentrixa Marketing services including Wikipedia content, fan art, comic books, animation, and brand-focused creative execution.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Creative Branding, Animation & Wiki Services | Zentrixa Marketing",
+    description:
+      "Discover full-service creative support from concept to final delivery for your content and brand assets.",
+    url: "/",
+  },
+};
 
 export default function Home() {
   return (

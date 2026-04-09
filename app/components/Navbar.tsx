@@ -2,7 +2,7 @@
 
 import { Menu, X, Zap, ArrowUp } from "lucide-react"
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 
 function Navbar() {
     const [mobVisible, setMobVisible] = useState(false)
@@ -14,13 +14,13 @@ function Navbar() {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
-    const checkScrollTop = () => {
+    const checkScrollTop = useCallback(() => {
         if (!showScroll && window.scrollY > 300) {
             setShowScroll(true)
         } else if (showScroll && window.scrollY <= 300) {
             setShowScroll(false)
         }
-    }
+    }, [showScroll])
 
     useEffect(() => {
         if (mobVisible) {
@@ -39,14 +39,17 @@ function Navbar() {
         return () => {
             window.removeEventListener('scroll', checkScrollTop)
         }
-    }, [showScroll])
+    }, [checkScrollTop])
 
   return (
     <>
         <header className="w-full h-1/5 sticky top-0 p-5 flex justify-between items-center bg-transparent backdrop-blur-3xl border-b border-b-gray-300 shadow-md overflow-hidden z-40">
-            <Link href={'/'} className="flex items-center gap-5 cursor-pointer hover:opacity-80 transition-opacity">
-                <Zap size={28} color="#4f39f6" fill="#4f39f6" />
-                <h1 className="font-bold text-xl md:text-2xl">Zentrixa<span className="text-indigo-600">Marketing</span></h1>
+            <Link href={'/'} className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity" aria-label="Zentrixa Marketing home">
+                <h1 className="font-bold text-xl md:text-2xl flex items-center gap-1">
+                    Zentrixa
+                    <Zap size={20} color="#4f39f6" fill="#4f39f6" aria-hidden="true" />
+                    <span className="text-indigo-600">Marketing</span>
+                </h1>
             </Link>
             {
                 mobVisible ? <X className="md:hidden" onClick={toggleButton} size={28} /> : <Menu className="md:hidden" onClick={toggleButton} size={28} />
