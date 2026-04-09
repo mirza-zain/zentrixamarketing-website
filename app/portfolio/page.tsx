@@ -46,7 +46,7 @@ const PortfolioPage = () => {
   const activeImage = selectedImageIndex !== null ? allGalleryImages[selectedImageIndex] : null
 
   return (
-    <div className="bg-slate-900 min-h-screen text-white pt-24 pb-0 flex flex-col">
+    <div className="bg-slate-900 min-h-screen text-white pt-6 md:pt-16 pb-0 flex flex-col">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 grow">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 bg-linear-to-r from-[#22d3ee] via-[#60a5fa] to-[#818cf8] bg-clip-text text-transparent">The Art Gallery</h1>

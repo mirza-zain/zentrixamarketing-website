@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <div className="w-full min-h-screen relative overflow-hidden flex flex-col xl:flex-row justify-center items-center bg-linear-to-br from-[#dbeafe] via-[#ecfeff] to-[#e0e7ff] lg:p-5">
+      <div className="w-full min-h-[calc(100svh-76px)] md:min-h-[calc(100svh-88px)] relative overflow-hidden flex flex-col xl:flex-row justify-center items-center bg-linear-to-br from-[#dbeafe] via-[#ecfeff] to-[#e0e7ff] lg:p-5">
         <div className="absolute -top-24 -left-20 h-72 w-72 rounded-full bg-cyan-300/40 blur-3xl"></div>
         <div className="absolute -bottom-24 right-10 h-80 w-80 rounded-full bg-indigo-300/35 blur-3xl"></div>
         <div className="w-full xl:w-1/2 flex flex-col items-left justify-center gap-6 mx-5 p-5 relative z-10">
@@ -40,8 +40,8 @@ export default function Home() {
         </div>
         <div className="hidden lg:flex lg:w-1/2 justify-center p-12">
              <div className="relative w-full max-w-lg aspect-square">
-               <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-cyan-500 rounded-[3rem] rotate-6 opacity-20"></div>
-               <div className="absolute inset-0 bg-gradient-to-bl from-indigo-500 to-blue-600 rounded-[3rem] -rotate-3 opacity-30 backdrop-blur-xl border border-white/20"></div>
+               <div className="absolute inset-0 bg-linear-to-tr from-blue-500 to-cyan-500 rounded-[3rem] rotate-6 opacity-20"></div>
+               <div className="absolute inset-0 bg-linear-to-bl from-indigo-500 to-blue-600 rounded-[3rem] -rotate-3 opacity-30 backdrop-blur-xl border border-white/20"></div>
                <img src={comicDisplayImage.src} className="absolute inset-0 w-full h-full object-cover rounded-[3rem] shadow-2xl rotate-0 border-4 border-white" alt="Hero Art"/>
              </div>
           </div>
