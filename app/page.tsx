@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <div className="w-full min-h-screen relative overflow-hidden flex flex-col xl:flex-row justify-center items-center bg-linear-to-br from-[#dbeafe] via-[#ecfeff] to-[#e0e7ff] p-5">
+      <div className="w-full min-h-screen relative overflow-hidden flex flex-col xl:flex-row justify-center items-center bg-linear-to-br from-[#dbeafe] via-[#ecfeff] to-[#e0e7ff] lg:p-5">
         <div className="absolute -top-24 -left-20 h-72 w-72 rounded-full bg-cyan-300/40 blur-3xl"></div>
         <div className="absolute -bottom-24 right-10 h-80 w-80 rounded-full bg-indigo-300/35 blur-3xl"></div>
         <div className="w-full xl:w-1/2 flex flex-col items-left justify-center gap-6 mx-5 p-5 relative z-10">
