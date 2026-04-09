@@ -49,7 +49,7 @@ const PortfolioPage = () => {
     <div className="bg-slate-900 min-h-screen text-white pt-24 pb-0 flex flex-col">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 grow">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">The Art Gallery</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 bg-linear-to-r from-[#22d3ee] via-[#60a5fa] to-[#818cf8] bg-clip-text text-transparent">The Art Gallery</h1>
           <p className="text-xl text-slate-400">Swipe horizontally or use arrows to view our featured collections.</p>
         </div>
 
@@ -65,7 +65,7 @@ const PortfolioPage = () => {
         </CarouselSection>
 
         {/* Carousel 2: Premium Fan Arts */}
-        <CarouselSection title="Premium Fan Arts" icon={<Palette className="text-purple-400" />}>
+        <CarouselSection title="Premium Fan Arts" icon={<Palette className="text-indigo-400" />}>
           {largeFanArts.map((img, index) => (
             <div 
               key={index} 
@@ -78,7 +78,7 @@ const PortfolioPage = () => {
         </CarouselSection>
 
         {/* Carousel 3: Small Fan Art Collection */}
-        <CarouselSection title="The Collection" icon={<ImageIcon className="text-indigo-400" />}>
+        <CarouselSection title="The Collection" icon={<ImageIcon className="text-cyan-400" />}>
           {smallFanArts.map((img, index) => (
             <div 
               key={index} 

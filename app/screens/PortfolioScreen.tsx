@@ -11,10 +11,10 @@ export default function PortfolioScreen() {
           </div>
           <div className="flex flex-wrap justify-center gap-6">
             {accounts.map((acc, index) => (
-              <a key={index} href={acc.link} className="group block p-6 sm:p-8 bg-slate-50 rounded-2xl hover:bg-slate-900 transition-colors border border-slate-200 w-full sm:w-80 mx-auto sm:mx-0">
+              <a key={index} href={acc.link} className="group block p-6 sm:p-8 bg-slate-50 rounded-2xl hover:bg-slate-900 transition-colors border border-slate-200 hover:border-cyan-400/60 w-full sm:w-80 mx-auto sm:mx-0">
                 <ExternalLink className="w-8 h-8 text-slate-400 group-hover:text-white mb-6" />
                 <h3 className="text-xl font-bold mb-2 text-slate-900 group-hover:text-white">{acc.name}</h3>
-                <p className="text-indigo-600 group-hover:text-indigo-300 font-medium">{acc.role}</p>
+                <p className="text-blue-600 group-hover:text-cyan-300 font-medium">{acc.role}</p>
               </a>
             ))}
           </div>

@@ -9,9 +9,9 @@ function CoverArtScreen() {
   const router = useRouter()
   return (
     <section id="portfolio" className="py-24 bg-slate-900 relative overflow-hidden text-center scroll-mt-24">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-indigo-500 via-slate-900 to-slate-900 z-0"></div>
+        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-[#60a5fa] via-[#22d3ee]/35 to-[#818cf8]/25 z-0"></div>
         <div className="max-w-5xl mx-auto px-4 relative z-10">
-          <h2 className="text-indigo-400 font-bold tracking-widest uppercase text-sm mb-2">Featured Artwork</h2>
+          <h2 className="font-bold tracking-widest uppercase text-sm mb-2 bg-linear-to-r from-[#2563eb] to-[#06b6d4] bg-clip-text text-transparent">Featured Artwork</h2>
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-10">Art & Comic Showcase</h3>
           
           {/* Cover Art Display */}
@@ -22,7 +22,7 @@ function CoverArtScreen() {
 
           <p className="text-base sm:text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto px-2">Explore our complete collection of custom comic pages, character designs, and premium fan illustrations.</p>
           
-          <button onClick={() => router.push('/portfolio')} className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-10 py-3 sm:py-5 rounded-full font-bold text-white bg-indigo-600 hover:bg-indigo-500 transition shadow-xl hover:-translate-y-1 text-sm sm:text-lg">
+          <button onClick={() => router.push('/portfolio')} className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-10 py-3 sm:py-5 rounded-full font-bold text-white bg-linear-to-r from-[#2563eb] to-[#4f46e5] hover:from-[#4f46e5] hover:to-[#2563eb] transition-all shadow-[0_14px_34px_rgba(37,99,235,0.45)] hover:-translate-y-1 text-sm sm:text-lg">
             <ImageIcon className="w-6 h-6" /> View Full Gallery
           </button>
         </div>

@@ -22,13 +22,13 @@ export default function CarouselSection({ title, icon, children }: CarouselSecti
         {icon} {title}
       </h2>
       <div className="relative">
-        <button aria-label="Scroll carousel left" title="Scroll carousel left" onClick={() => scroll('left')} className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/60 p-3 rounded-full text-white opacity-0 group-hover:opacity-100 transition hover:bg-indigo-600 shadow-xl hidden md:block">
+        <button aria-label="Scroll carousel left" title="Scroll carousel left" onClick={() => scroll('left')} className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/60 p-3 rounded-full text-white opacity-0 group-hover:opacity-100 transition hover:bg-linear-to-r hover:from-[#2563eb] hover:to-[#06b6d4] shadow-xl hidden md:block">
           <ChevronLeft className="w-6 h-6" />
         </button>
         <div ref={scrollRef} className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 hide-scroll px-2">
           {children}
         </div>
-        <button aria-label="Scroll carousel right" title="Scroll carousel right" onClick={() => scroll('right')} className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/60 p-3 rounded-full text-white opacity-0 group-hover:opacity-100 transition hover:bg-indigo-600 shadow-xl hidden md:block">
+        <button aria-label="Scroll carousel right" title="Scroll carousel right" onClick={() => scroll('right')} className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/60 p-3 rounded-full text-white opacity-0 group-hover:opacity-100 transition hover:bg-linear-to-r hover:from-[#2563eb] hover:to-[#06b6d4] shadow-xl hidden md:block">
           <ChevronRight className="w-6 h-6" />
         </button>
       </div>

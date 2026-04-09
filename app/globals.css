@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+:root {
+  --brand-blue: #2563eb;
+  --brand-cyan: #06b6d4;
+  --brand-indigo: #4f46e5;
+  --hero-cyan: #22d3ee;
+  --hero-blue: #60a5fa;
+  --hero-indigo: #818cf8;
+  --bg-light: #f8fafc;
+  --bg-dark: #0f172a;
+  --bg-darkest: #020617;
+}
+
 html {
 	scroll-behavior: smooth;
 }

@@ -41,15 +41,15 @@ export default function ContactSection() {
     <section id="contact" className="py-20 bg-slate-50 border-t border-slate-200 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 flex flex-col lg:flex-row">
-          <div className="lg:w-5/12 p-10 md:p-16 bg-indigo-600 text-white flex flex-col justify-center relative overflow-hidden">
+          <div className="lg:w-5/12 p-10 md:p-16 bg-linear-to-br from-[#2563eb] to-[#4f46e5] text-white flex flex-col justify-center relative overflow-hidden">
             <div className="relative z-10">
               <h3 className="text-3xl font-extrabold mb-4">Let&apos;s connect.</h3>
-              <p className="text-indigo-100 mb-10 text-lg">Ready to elevate your brand? Send us a message and we&apos;ll respond within 24 hours.</p>
+              <p className="text-cyan-100 mb-10 text-lg">Ready to elevate your brand? Send us a message and we&apos;ll respond within 24 hours.</p>
               <div className="space-y-8">
                 <div className="flex items-start gap-5">
                   <div className="bg-white/10 p-4 rounded-2xl backdrop-blur-sm shrink-0"><Mail className="w-6 h-6 text-white" /></div>
                   <div className="min-w-0">
-                    <p className="text-indigo-200 text-xs md:text-sm font-bold uppercase tracking-wider mb-1">Business Mail</p>
+                    <p className="text-cyan-100 text-xs md:text-sm font-bold uppercase tracking-wider mb-1">Business Mail</p>
                     <p className="font-semibold text-xs sm:text-sm md:text-lg overflow-wrap">services@pixelpulsecreationz.com</p>
                   </div>
                 </div>
@@ -85,17 +85,17 @@ export default function ContactSection() {
               <input type="hidden" name="_captcha" value="false" />
               <div>
                 <label className="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
-                <input type="text" name="name" required placeholder="John Doe" className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none" />
+                <input type="text" name="name" required placeholder="John Doe" className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-cyan-500 outline-none" />
               </div>
               <div>
                 <label className="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
-                <input type="email" name="email" required placeholder="you@example.com" className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none" />
+                <input type="email" name="email" required placeholder="you@example.com" className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-cyan-500 outline-none" />
               </div>
               <div>
                 <label className="block text-sm font-bold text-slate-700 mb-2">Project Details</label>
-                <textarea name="message" required rows={3} placeholder="Tell us what you need..." className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none resize-none"></textarea>
+                <textarea name="message" required rows={3} placeholder="Tell us what you need..." className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-cyan-500 outline-none resize-none"></textarea>
               </div>
-              <button type="submit" disabled={isSubmitting} className="w-full p-4 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-colors shadow-md mt-2 disabled:opacity-70 disabled:cursor-not-allowed">
+              <button type="submit" disabled={isSubmitting} className="w-full p-4 bg-linear-to-r from-[#2563eb] to-[#4f46e5] text-white rounded-xl font-bold hover:from-[#4f46e5] hover:to-[#2563eb] transition-all shadow-[0_10px_24px_rgba(37,99,235,0.25)] mt-2 disabled:opacity-70 disabled:cursor-not-allowed">
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
